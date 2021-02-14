@@ -8,15 +8,10 @@ Copyright 2021
 
 # third-party packages
 import tornado.ioloop
-import tornado.web
 
 # internal modules
 from config import *
-import tornadoapp.requesthandler as rh
-from tornadoapp.routes import routes
-
-def make_app():
-    return tornado.web.Application(routes)
+from tornadoapp import make_app 
 
 if __name__ == '__main__':
     app = make_app()
