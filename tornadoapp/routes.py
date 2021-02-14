@@ -4,5 +4,6 @@ import tornadoapp.requesthandler as rh
 
 
 routes = [
-    (r"/", rh.Main),
+    (r'/', rh.Main),
+    (r'/api', rh.Api)
 ]
