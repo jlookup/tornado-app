@@ -1,8 +1,8 @@
-# Tornado Request handlers
+# Tornado Request Handlers
 
 
 import tornado.web
 
 class Main(tornado.web.RequestHandler):
     def get(self):
-        self.write("Hello World!")
+        self.render("./templates/index.html")

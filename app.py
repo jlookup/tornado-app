@@ -16,5 +16,7 @@ from tornadoapp import make_app
 if __name__ == '__main__':
     app = make_app()
     app.listen(PORT)
-    tornado.ioloop.IOLoop.current().start()
     print(f'[START] listening on {PORT}')
+    
+    tornado.ioloop.IOLoop.current().start()
+    # put nothing below this line.
