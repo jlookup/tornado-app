@@ -1,7 +1,6 @@
 '''
 Tornado Web App
-Jason Thomas
-Copyright 2021
+2021 Jason Thomas
 '''
 
 # standard library
@@ -10,13 +9,14 @@ Copyright 2021
 import tornado.ioloop
 
 # internal modules
-from config import *
+from config import PORT
 from tornadoapp import make_app 
 
 if __name__ == '__main__':
     app = make_app()
     app.listen(PORT)
     print(f'[START] listening on {PORT}')
-    
+
+    # event loop starts below. Nothing after this will run
     tornado.ioloop.IOLoop.current().start()
-    # put nothing below this line.
+    # nothing below this line
